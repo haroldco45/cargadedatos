@@ -1,5 +1,5 @@
-const CACHE_NAME = 'vp-cartera-v1';
-const ASSETS = [
+const CACHE_NAME = 'vp-cartera-cache-v1';
+const RECURSOS = [
   './',
   './index.html',
   './manifest.json',
@@ -7,7 +7,9 @@ const ASSETS = [
 ];
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)));
+  e.waitUntil(
+    caches.open(CACHE_NAME).then(cache => cache.addAll(RECURSOS))
+  );
 });
 
 self.addEventListener('fetch', e => {

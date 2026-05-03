@@ -1,10 +1,10 @@
 {
   "name": "Cartera Vibras Positivas HM",
   "short_name": "VP Cartera",
-  "description": "Gestión de cartera y carga de Excel a MongoDB",
+  "description": "Sistema de carga de cartera para MongoDB",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#f4f7f6",
   "theme_color": "#007bff",
   "icons": [
     {
